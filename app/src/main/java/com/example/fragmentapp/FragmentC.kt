@@ -1,7 +1,6 @@
 package com.example.fragmentapp
 
 import android.os.Bundle
-import android.util.Log
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
@@ -40,7 +39,6 @@ class FragmentC : Fragment() {
 
 	override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
 		super.onViewCreated(view, savedInstanceState)
-		Log.e("eee", "ViewCreated C")
 		binding.textMessage.text = param1
 		binding.buttonToD.setOnClickListener {
 			(requireActivity() as? FragmentNavigationListener)?.navigateToFragmentD()
